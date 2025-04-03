@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MWE | Atividade 1 </title>
+  <link rel="stylesheet" href="assets/styles/common.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Atividade 1</h1>
+  </header>
+  <main id="main">
+    <h2>Exercícios (1 a 9) da Atividade 1</h2>
+    <p>Consultar os arquivos da pasta assets para validar a implementação</p>
+    <section>
+      <button type="button" onclick="changeMainBackgroundColor()"> Mudar cor de fundo </button>
+    </section>
+
+    <section class="words">
+      <form id="addElement">
+        <h3>Adicionar nova palavra na lista</h3>
+        <div class="form-field">
+          <label for="word">Palavra desejada:</label>
+          <input type="text" name="word" id="word" placeholder="Escreva a palavra" />
+        </div>
+        <button type="submit">Adicionar</button>
+      </form>
+      <div>
+        <h3>Lista de elementos</h3>
+        <ul id="randomWordsList">
+          <li>Computador</li>
+          <li>Aventura</li>
+          <li>Planeta</li>
+          <li>Relógio</li>
+          <li>Biblioteca</li>
+          <li>Inovação</li>
+        </ul>
+      </div>
+    </section>
+    <section id="mockableMsg">
+      <h3>Retorno do endpoint do Mockable.io</h3>
+    </section>
+
+    <section id="mockablePost">
+      <h3>Envio de dados para o Mockable.io</h3>
+      <form id="mockablePostForm" action="" method="post">
+        <div class="form-field">
+          <label for="name">Nome</label>
+          <span id="nome">
+            <input type="text" name="nome" placeholder="Digite seu nome" required/>
+            <span class="error-message" id="nomeError">Nome é obrigatório</span>
+          </span>
+        </div>
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <span id="email">
+            <input type="email" name="email" placeholder="Digite seu email" required />
+            <span class="error-message" id="emailError">E-mail é obrigatório</span>
+          </span>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section>
+      <h3>Dados de uma tabela</h3>
+      <table id="tableMock">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Idade</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+      </table>
+      <button type="button" onclick="createNewTableWithMockableIoData(true)">Limpar filtro de maioridade</button>
+    </section>
+    <section>
+      <a href="./exercicio10.html">Visualizar exercício 10</a>
+    </section>
+  </main>
+  <footer>
+    <i>Criado por Jamilli Vitória Gioielli</i>
+  </footer>
+  <script src="assets/scripts/mockable-io.js"></script>
+  <script src="assets/scripts/main.js"></script>
+</body>
+</html>

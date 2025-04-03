@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 | Partida</title>
+</head>
+<body>
+    <div>
+        <h3>Gerar partidas</h3>
+    <form id="formPartida">
+        <label for="campeonatos">Campeonato</label>
+        <select id="campeonatos">
+        </select>
+        <br>
+        <label for="timeMandante">Time Mandante</label>
+        <input type="text" id="timeMandante" name="timeMandante"/>
+        <br>
+        <label for="timeVisitante">Time Visitante</label>
+        <input type="text" id="timeVisitante" name="timeVisitante"/>
+        <button type="submit"> Cadastrar</button>
+    </form>
+    </div>
+    <section>
+        <table>
+            <thead>
+                <th>Campeonato</th>
+                <th>Time Visitante</th>
+                <th>Time Mandante</th>
+            </thead>
+            <tbody id="partidas"></tbody>
+        </table>
+    </section>
+    <script src="./scripts/dist/localstoragectrl.js"></script>
+    <script src="./scripts/dist/partida.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 1rem 0;
+}
+
+section{
+  margin: 3rem 0;
+}
+
+body{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  font-family: "Poppins", sans-serif;
+}
+
+main{
+  background-color: rgba(54, 8, 145, 0.794);
+  color: #fff;
+  padding: 1rem;
+}
+
+main button{
+  cursor: pointer;
+  background: rgb(196, 200, 255);
+  border: solid 2px rgb(78, 76, 215);
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+}
+
+input, button{
+  padding: 0.5rem;
+}
+
+input{
+  border: none;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.form-field input{
+  width: 300px;
+}
+
+.error-message{
+  color: rgb(242, 91, 91);
+  font-style: italic;
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}

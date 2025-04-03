@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 | Campeonatos</title>
+</head>
+<body>
+    <div>
+        <h3>Gerar campeonatos</h3>
+    <form id="formCampeonatos">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome"/>
+        <br>
+        <label for="categoria">Categoria</label>
+        <select id="categoria">
+            <option value="amador">Amador</option>
+            <option value="profissional">Profissional</option>
+        </select>
+        <br>
+        <label for="torneio">Tipo de torneio</label>
+        <select id="torneio">
+            <option value="mata-mata">Mata-mata</option>
+            <option value="pontos-corridos">Pontos Corridos</option>
+        </select>
+        <br>
+        <label for="dataInicio">Data inicio</label>
+        <input type="text" id="dataInicio" name="dataInicio"/>
+        <br>
+        <label for="dataFim">Data fim</label>
+        <input type="text" id="dataFim" name="dataFim"/>
+        <button type="submit"> Cadastrar</button>
+    </form>
+    </div>
+    <br/>
+    <br/>
+    <section>
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Tipo de torneio</th>
+                <th>Data de inicio</th>
+                <th>Data fim</th>
+            </thead>
+            <tbody id="campeonatos">
+            </tbody>
+        </table>
+    </section>
+    <script src="./scripts/dist/localstoragectrl.js"></script>
+    <script src="./scripts/dist/campeonato.js"></script>
+</body>
+</html>

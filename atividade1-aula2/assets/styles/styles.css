@@ -1,0 +1,10 @@
+section.words{
+  display: flex;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+
+#randomWordsList{
+  margin: 0 1rem;
+}
+
