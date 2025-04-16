@@ -1,0 +1,9 @@
+<h2>Questão 3</h2>
+<p>Idade atual: {{ idade }}</p>
+<button (click)="atualizaIdade(true)" type="button" style="cursor: pointer;">+</button>
+<button (click)="atualizaIdade()" type="button" style="cursor: pointer;">-</button>
+@if (idade >= 18) {
+<p>Acesso permitido.</p>
+} @else {
+<p>Acesso negado.</p>
+}

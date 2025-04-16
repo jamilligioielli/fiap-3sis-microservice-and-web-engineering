@@ -1,0 +1,18 @@
+<h2>Questão 8</h2>
+<div>
+  <label for="email">Email </label>
+  <input type="text" name="email" [(ngModel)]="email">
+</div>
+<div>
+  <label for="senha">Senha </label>
+  <input type="password" name="senha" [(ngModel)]="senha">
+</div>
+@if (!senha || !email) {
+<p><strong>Campos obrigatórios!</strong></p>
+} @else if (validarCampos()) {
+  <p>Credenciais inválidas!</p>
+} @else if (email == 'user@teste.com' && senha == 123456){
+  <p>Login bem sucedido!</p>
+} @else{
+  <p>Login não autorizado</p>
+}

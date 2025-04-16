@@ -1,0 +1,43 @@
+<h2>Questão 1</h2>
+<label for="mes">Escolha um mês</label>
+<br />
+<input name="mes" placeholder="Insira o número do mês" type="number" [(ngModel)]="mes"/>
+<br />
+@switch (mes) {
+@case (1) {
+<p>Janeiro</p>
+}
+@case (2) {
+<p>Fevereiro</p>
+}
+@case (3) {
+<p>Março</p>
+}
+@case (4) {
+<p>Abril</p>
+}
+@case (5) {
+<p>Maio</p>
+}
+@case (6) {
+<p>Junho</p>
+}
+@case (7) {
+<p>Julho</p>
+}
+@case (8) {
+<p>Agosto</p>
+}
+@case (9) {
+<p>Setembro</p>
+}
+@case (10) {
+<p>Outubro</p>
+}@case (11) {
+<p>Novembro</p>
+}@case (12) {
+<p>Dezembro</p>
+}@default {
+<p>Mês inválido</p>
+}
+}

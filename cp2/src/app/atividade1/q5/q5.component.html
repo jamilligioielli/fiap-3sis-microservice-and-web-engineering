@@ -1,0 +1,23 @@
+<h2>Questão 5</h2>
+<h3>Status de pedidos</h3>
+<select name="status" [(ngModel)]="status">
+  <option value="pendente">Pendente</option>
+  <option value="enviado">Enviado</option>
+  <option value="entregue">Entregue</option>
+</select>
+<p>
+  @switch (status) {
+  @case ('pendente') {
+    Aguardando confirmação
+  }
+  @case ('enviado') {
+    Pedido a caminho
+  }
+  @case ('entregue') {
+    Pedido entregue
+  }
+  @default {
+    Status desconhecido
+  }
+  }
+</p>
